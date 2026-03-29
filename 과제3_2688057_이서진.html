@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>3장 과제 - 시맨틱 & 폼</title>
+</head>
+<body>
+    <header>
+        <h1>🎬 영화 리뷰 커뮤니티</h1>
+        <p>당신의 소중한 관람 후기를 남겨주세요.</p>
+    </header>
+
+    <nav>
+        <p>홈 | 영화 정보 | <b>리뷰 작성</b></p>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>영화 리뷰 입력 폼</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>기본 정보</legend>
+                    이름: <input type="text" placeholder="이름을 입력하세요" required><br><br>
+                    영화 제목: 
+                    <select>
+                        <option>파묘</option>
+                        <option>듄: 파트2</option>
+                        <option>범죄도시4</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>상세 후기</legend>
+                    별점: 
+                    <input type="radio" name="star" value="5"> 5점
+                    <input type="radio" name="star" value="4"> 4점
+                    <input type="radio" name="star" value="3"> 3점 <br><br>
+                    관람평: <br>
+                    <textarea rows="5" cols="40" placeholder="내용을 작성해주세요"></textarea><br>
+                    장르 선택: 
+                    <input type="checkbox"> 공포
+                    <input type="checkbox"> 액션
+                    <input type="checkbox"> 로맨스
+                </fieldset>
+
+                <br>
+                <input type="submit" value="리뷰 등록">
+                <input type="reset" value="다시 작성">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+</body>
+</html>
